@@ -1,0 +1,29 @@
+###
+GET http://localhost:9000/api HTTP/1.1
+
+###
+POST http://localhost:9000/api HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Perencejo",
+    "apellido": "Ramirez",
+    "documento": 9087654321,
+    "tipo_empleado": "planta",
+    "salario_basico": 1700000
+}
+
+###
+DELETE http://localhost:9000/api/3 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Perencejo",
+    "apellido": "Ramirez",
+    "documento": 9087654321,
+    "tipo_empleado": "contratista",
+    "salario_basico": 2000000
+}
